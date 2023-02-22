@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" media=”screen” />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <title>Document11</title>
+</head>
+<body onload="load()">
+    <div id="app" class="app">
+        <div class="functionalContainer">
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2"> 
+                            <div id="dropContainer" class="dropContainer">
+                                <span class="dropTitle">Drop files here</span>
+                                or
+                                <input type="file" id="updListFile" name="filename" accept=".csv,.txt" class="updListFile">
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="cellBorder cellBorderRight"><label for="date" class="selectLbl">Choose a date format:</label></td>
+                        <td class="cellBorder"><select name="date" id="date-formats" class="select-box"></select></td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="cellBorder"><input id="submitFile" type="submit" class="sbmtBtn"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+           
+            <br>
+            
+            
+            
+        </div>
+        <div id="grid-container" class="grid-container">
+            <table id="grid">
+
+            </table>
+        </div>
+    </div>
+     
+    <script src="jquery.js"></script>
+    <script src="moment.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
